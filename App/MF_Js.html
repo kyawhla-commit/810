@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map & Filter</title>
+</head>
+<body>
+    <script>
+        let users = [
+            { name: 'Alice', age: 10},
+            { name: 'Bob', age: 17},
+            { name: 'Chris', age: 20},
+            { name: 'Dave', age: 20},
+            { name: 'Eve', age: 20},
+        ]
+
+        let names = users.map(user => user.name);
+        let u20 = users.filter(user => user.age <= 20);
+
+        let result = users
+            .filter(user => user.age <= 20)
+            .map(user => user.name)
+    </script>
+</body>
+</html>

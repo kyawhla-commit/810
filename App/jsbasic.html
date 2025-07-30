@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic JavaScript</title>
+</head>
+<body>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia, veritatis.</p>
+    <button>Button</button>
+
+    <script>
+        document.querySelector('button').onclick = hello;
+
+        function hello() {
+            var p = document.querySelector('p');
+            p.textContent = 'This is a paragraph.';
+            p.style.padding = '70px';
+            p.style.backgroundColor = 'lightblue';
+            p.style.borderLeft = '5px solid blue';
+        }
+    </script>
+</body>
+</html>

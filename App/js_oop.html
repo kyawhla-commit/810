@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOP</title>
+</head>
+<body>
+    <script>
+        let bob = {
+            name: 'Bob',
+             hello: function() {
+                return `Hello ${this.name}`;
+             }
+        };
+
+        class Animal {
+            constructor(name) {
+                this.name = name
+            }
+
+            hello() {
+                return `Hello ${this.name}`;
+            }
+        }
+
+        class Dog extends Animal {
+            run() {
+                return `${this.name} is running...`;
+            }
+        };
+
+        let bobby = new Dog('bobby');
+    </script>
+</body>
+</html>
